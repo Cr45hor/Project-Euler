@@ -179,7 +179,7 @@ int factorize(int x, int buffer[16]) {
     return idx;
 }
 
-bool check(ll n, int p) {
+bool check(ll n) {
     Matrix<Z> mat;
     mat(0, 0) = mat(1, 0) = mat(1, 1) = Z(1);
     mat(0, 1) = Z(7);
@@ -205,7 +205,7 @@ ll calculate_g(int p) {
     MOD = p;
     for (int i = 0; i < num_prime; i++) {
         int prime = factors[i];
-        while(res % prime == 0 && check(res / prime, prime)) {
+        while(res % prime == 0 && check(res / prime)) {
             res /= prime;
         }
     }
