@@ -1,3 +1,5 @@
+import math
+
 def compare_fraction(num1, den1, num2, den2):
     return num1 * den2 == num2 * den1
 
@@ -19,4 +21,8 @@ for num in range(10, 100):
             if compare_fraction(num, den, new_num, new_den):
                 curious_fractions.add((num, den))
 
-print(curious_fractions)
+# print(curious_fractions)
+prod_num = math.prod(num for num, _ in curious_fractions)
+prod_den = math.prod(den for _, den in curious_fractions)
+gcd = math.gcd(prod_num, prod_den)
+print(prod_den // gcd)

@@ -11,4 +11,4 @@ for perm in permutations('0123456789'):
     if (0 in divisibility_list) == False:
         cnt += 1
         sum += number
-print(cnt, sum)
+print(sum)

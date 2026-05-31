@@ -39,4 +39,5 @@ if pulp.LpStatus[status] == 'Optimal':
         for d in choices:
             if pulp.value(x[i][d]) == 1:
                 result += str(d)
-    print(f"The unique solution is: {result}")
+    # print(f"The unique solution is: {result}")
+    print(result)

@@ -55,4 +55,5 @@ if __name__ == "__main__":
     p = 76543217
     
     result = solve_pe412(m, n, p)
-    print(f"LC({m}, {n}) mod {p} = {result}")
+    # print(f"LC({m}, {n}) mod {p} = {result}")
+    print(result)

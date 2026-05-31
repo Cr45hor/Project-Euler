@@ -1,0 +1,9 @@
+# For solving computational problem
+numpy
+gmpy2
+sympy
+
+# For crawling and parsing
+requests
+selenium
+beautifulsoup4

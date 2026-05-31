@@ -50,4 +50,5 @@ def compute_F(N):
     return f"{Decimal(ans):.10e}"
 
 # Compute for N = 10^18
-print(f"F(10^18) = {compute_F(10**18)}")
+# print(f"F(10^18) = {compute_F(10**18)}")
+print(compute_F(10**18))

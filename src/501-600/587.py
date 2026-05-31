@@ -30,4 +30,4 @@ if __name__ == "__main__":
             r = mid
         else:
             l = mid + 1
-    print(l, f(l))
+    print(l)

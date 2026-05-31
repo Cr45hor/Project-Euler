@@ -22,4 +22,4 @@ def decimal_representation(a, b):
     return None, None
 
 reciprocal_list = [(d, decimal_representation(1, d)) for d in range(2, 1000)]
-print(max(reciprocal_list, key=lambda x: len(x[1][1])))
+print(max(reciprocal_list, key=lambda x: len(x[1][1]))[0])

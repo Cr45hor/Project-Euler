@@ -37,4 +37,5 @@ if __name__ == "__main__":
     b = 1
     offset = 1
     
-    print(f"Volume of coat: {coat_fast(a, b, offset):.8f}")
+    # print(f"Volume of coat: {coat_fast(a, b, offset):.8f}")
+    print(f"{coat_fast(a, b, offset):.8f}")
