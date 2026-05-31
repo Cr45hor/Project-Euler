@@ -8,7 +8,7 @@ pandigital_primes = []
 for k in range(1, 10):
     for perm in permutations(range(1, k + 1)):
         number = int(''.join(str(d) for d in perm))
-        if gmpy2.is_prime(number):
+        if gmpy2.is_prime(number): # type: ignore
             pandigital_primes.append(number)
 
 print(max(pandigital_primes))

@@ -1,4 +1,4 @@
-from gmpy2 import is_prime
+from gmpy2 import is_prime # type: ignore
 from itertools import combinations
 
 THRESHOLD = 8
