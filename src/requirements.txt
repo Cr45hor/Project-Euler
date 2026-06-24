@@ -2,6 +2,7 @@
 numpy
 gmpy2
 sympy
+scipy
 
 # For crawling and parsing
 requests
