@@ -1,3 +1,1 @@
-for n in range(1, 2**6):
-    if n ^ (n * 2) ^ (n * 3) == 0:
-        print(n, end=' ')
+print(sum(1 for n in range(1, 2**30) if n ^ (n * 2) ^ (n * 3) == 0))

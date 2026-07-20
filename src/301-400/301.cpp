@@ -1,16 +1,17 @@
+// print(sum(1 for n in range(1, 2**30) if n ^ (n * 2) ^ (n * 3) == 0))
+
 #include <iostream>
+#include <cstdint>
 
 using namespace std;
 
-int const N = 4;
-
-int dp[N][2];
-
 int main() {
-    dp[0][0] = dp[0][1] = 1;
-    for (int i = 1; i < N; i++) {
-        dp[i][0] = dp[i - 1][0] + dp[i - 1][1];
-        dp[i][1] = dp[i - 1][0];
-        
+    int64_t count = 0;
+    for (int64_t n = 1; n <= (1LL << 30); ++n) {
+        if ((n ^ (n * 2) ^ (n * 3)) == 0) {
+            ++count;
+        }
     }
+    cout << count << '\n';
+    return 0;
 }

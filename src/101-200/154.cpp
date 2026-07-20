@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int const N = 2e5;
+int const N = 2e6;
 
 int v2_fact[N + 1];
 int v5_fact[N + 1];

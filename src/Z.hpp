@@ -48,7 +48,7 @@ struct Z{
         return Z(x - other.x);
     }
     Z operator*(const Z& other) const {
-        return Z(1LL * x * other.x);
+        return Z((int64_t)x * other.x);
     }
     Z operator/(const Z& other) const {
        return *this * other.inv();
